@@ -34,7 +34,7 @@ function printQuestionMarks(num) {
 // Methods needed to retrieve and store data in the database
 var orm = {
     selectAll: function(tableInput, cb) {
-        var queryString = "SELECT * FROM" + tableInput + ";";
+        var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
